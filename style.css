@@ -1,22 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
+* { 
+    margin:0; 
+    padding:0; 
+    border:0; 
+    box-sizing: border-box; 
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <title>Document</title>
-</head>
-<body>
-  <header></header>
-  <section id="main">
-    <div id="lava"></div>
-    <div id="prava"></div>
-  </section>
-  <footer></footer>
-</body>
+html, body {
+	height: 100%;
+}
+.header {
+    background-color:#232C33;
+    border-bottom: #232C33 2px solid;
+    top: repeat-x;
+    height:8%;
+    font-size: 27px;
+}
 
-</html>
+a{
+    font-family: 'Signika Negative', sans-serif;
+    text-decoration: none;
+    color: #E9F1F7;
+    position: relative;
+    left: 75vh;
+    margin: 30px;
+}
 
+.column {
+  height: 84%;
+  float: left;
+}
 
+.lava {
+	width: 20%;
+	background-color: #F5F5F5;
+}
+
+.prava {
+	width: 80%;
+	background-color: #edede9;
+}
+footer{
+    text-align: center;
+    background-color: #232C33;
+    color: #E9F1F7;
+    padding: 40px;
+    
+}
+img{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: px;
+    right: 250px;
+}
+main{
+    width: 100%;
+    min-height:calc(94.4% - 8% - 5%);
+}
