@@ -34,6 +34,10 @@ html, body {
     background-color: #232C33;
     color: #E9F1F7;
     padding: 30px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     
 }  
 img{
@@ -63,14 +67,70 @@ img{
 
 .column-80 {
     width: 80%;
-    background-color: #ffffff;
+    background-color: transparent;
     padding: 20px;
 }
-.container-main{
-    width: 100%;
-    height: 79.3%;
+
+.imgpro{
+    height: 350px;
+    width: 350px;
+    position: relative;
+    right:730px;
 }
-.bodym{
-    width: 100%;
-    background-color: #E9F1F7;
+.form{
+    text-align: center;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(253, 252, 252, 0.7);
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  background: #d2d5d6;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.popup-close {
+  cursor: pointer;
+  position: absolute;
+  bottom: 425px;
+  right: 455px;
+}
+
+@media screen and (max-width: 600px) {
+  .popup {
+    max-width: 100%;
+  }
+}
+.pismo{
+  font-family: 'Signika Negative', sans-serif;
+}
+
+input {
+  background: #cbcecf;
+}
+
+.tlacidlo{
+  position: absolute;
+  right: 230px;
+  top: 350px;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: x-large;
+  font-family: 'Signika Negative', sans-serif;
 }
