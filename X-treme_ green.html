@@ -7,14 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="header">
-    <a href="products.html" class="header_link" >Products</a>
-    <a href="about.html" class="header_link">About Us</a>
-    <a href="index.html" class="header_link"><img src="images/logo_biele.png" alt="index"></a>
-  </div>
+  <header>
+    <h1 class="heading1">Average</h1>
+    <h1 class="heading2">Chilli</h1>
+    <nav> 
+        <a href="products.html" class="header_link2">Products</a>
+        <a href="about.html" class="header_link1">About Us</a>
+        <a href="index.html"><img src="images/logo.png" class="header_logo" style="height: auto; width: 50px;" alt=""></a>
+    </nav>
+  </header>
   <div class="container">
     <div class="column-20">
         <br><a href="classic.html" class="sauce">Classic Original HotSauce</a></br>
@@ -25,10 +34,54 @@
         <br><a href="penicilin.html" class="sauce">Penicilin HotSauce</a></br>
     </div>
     <div class="column-80">
+      <div class="overlay" id="overlay">
+        <div class="popup">
+          <span class="popup-close" onclick="closePopup()">X</span>
+          <h2 class="pismo">Sign Up</h2>
+          <form class="pismo">
+            <label for="Gender">Gender</label>
+            <br>
+            <input type="radio" id="male" name="Gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="Gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="Gender" value="other">
+            <label for="other">Other</label>
+            <br>
+            <br>
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required> 
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="phone">Phone Number: </label>
+            <input type="number" name="phone number" required>
+            <br>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    
+      <button onclick="openPopup()" class="tlacidlo">Buy</button>
+      <img class="imgpro" src="images/Original.jpg" alt="">
+      <script>
+        function openPopup() {
+          document.getElementById("overlay").style.display = "flex";
+        }
+    
+        function closePopup() {
+          document.getElementById("overlay").style.display = "none";
+        }
+      </script>
+</div>  
+<img src="images/Trio.jpg" class="buyimg" alt="">
     </div>
-    <img src="images/zelene cili.jpg" alt="">
-</div>
-  <div class="footer">Copyright &copy; Average Chilli Company</div>
+
+  <footer>Copyright &copy; Average Chilli Company</footer> 
   </body>
   </html>
 </html>

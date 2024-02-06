@@ -1,86 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your E-Shop</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
 
-    nav {
-      background-color: #444;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-    section {
-      padding: 20px;
-    }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
 
-    .product {
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      margin: 10px;
-      padding: 10px;
-      background-color: #fff;
-      text-align: center;
-    }
+        .nav-link {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
 
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
-  </style>
+        /* Responsive styles */
+        @media only screen and (max-width: 600px) {
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-link {
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Your E-Shop</h1>
-  </header>
-
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">Contact</a>
-  </nav>
-
-  <section>
-    <div class="product">
-      <h2>Product 1</h2>
-      <p>Description of Product 1.</p>
-      <p>Price: $19.99</p>
-      <button>Add to Cart</button>
-    </div>
-
-    <div class="product">
-      <h2>Product 2</h2>
-      <p>Description of Product 2.</p>
-      <p>Price: $29.99</p>
-      <button>Add to Cart</button>
-    </div>
-
-    <!-- Add more product entries as needed -->
-
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Your E-Shop. All rights reserved.</p>
-  </footer>
+    <header>
+        <div class="logo">Your Logo</div>
+        <div class="nav-links">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Contact</a>
+        </div>
+    </header>
 
 </body>
+
 </html>
