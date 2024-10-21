@@ -26,6 +26,18 @@
     </nav>
   </header>
 
+ <button onclick="openPopup()" class="tlacidlo">Sign up/Sign in</button>
+      <img class="imgpro" src="images/Original.jpg" alt="">
+      <script>
+        function openPopup() {
+          document.getElementById("overlay").style.display = "flex";
+        }
+    
+        function closePopup() {
+          document.getElementById("overlay").style.display = "none";
+        }
+      </script>
+  
   <footer class="footer">Copyright &copy; Average Chilli Company</footer>
   </body>
   </html>
