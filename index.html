@@ -26,18 +26,48 @@
     </nav>
   </header>
 
- <button onclick="openPopup()" class="tlacidlo">Sign up/Sign in</button>
-      <img class="imgpro" src="images/Original.jpg" alt="">
-      <script>
-        function openPopup() {
-          document.getElementById("overlay").style.display = "flex";
-        }
-    
-        function closePopup() {
-          document.getElementById("overlay").style.display = "none";
-        }
-      </script>
+<div class="header">
+    <button class="button" onclick="openPopup()">
+        👤
+    </button>
+</div>
   
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Prihlásenie / Registrácia</h2>
+        <input type="text" placeholder="Meno" id="username" required>
+        <input type="password" placeholder="Heslo" id="password" required>
+        <br><br>
+        <button class="button" onclick="register()">Registruj sa</button>
+        <button class="button" onclick="login()">Prihlás sa</button>
+    </div>
+</div>
+  
+ <script>
+    function openPopup() {
+        document.getElementById("popup").style.display = "flex";
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+
+    function register() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        alert("Registrácia pre: " + username);
+        closePopup();
+    }
+
+    function login() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        alert("Prihlásenie pre: " + username);
+        closePopup();
+    }
+</script>
+
   <footer class="footer">Copyright &copy; Average Chilli Company</footer>
   </body>
   </html>
